@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::namespace('Greeting')->prefix('greeting')->group(function () {
+Route::prefix('greeting')->group(function () {
+    Route::get('/', function () {
+        return "HOGE";
+    });
+    Route::get('/say', 'App\Http\Controllers\GreetingController@say');
 });
