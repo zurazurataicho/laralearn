@@ -8,6 +8,6 @@ class HelloService implements GreetingService
 {
     public function say()
     {
-        return "hello";
+        return "hello!";
     }
 }
